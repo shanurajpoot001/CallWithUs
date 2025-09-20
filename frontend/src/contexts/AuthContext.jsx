@@ -7,8 +7,14 @@ import server from "../environment";
 
 export const AuthContext = createContext({});
 
+const baseURL = server + "/api/v1/users";
+console.log('=== AXIOS DEBUG ===');
+console.log('Server from environment:', server);
+console.log('Base URL for axios:', baseURL);
+console.log('===================');
+
 const client = axios.create({
-    baseURL: server + "/api/v1/users"
+    baseURL: baseURL
 })
 
 
