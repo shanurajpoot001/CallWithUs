@@ -9,6 +9,8 @@ const server = process.env.REACT_APP_SERVER_URL ||
     );
 
 console.log('Environment:', IS_PROD ? 'Production' : 'Development');
-console.log('Server URL:', server);
+console.log('NODE_ENV:', process.env.NODE_ENV);
+console.log('REACT_APP_SERVER_URL:', process.env.REACT_APP_SERVER_URL);
+console.log('Final Server URL:', server);
 
 export default server;

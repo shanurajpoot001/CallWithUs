@@ -58,9 +58,8 @@ export default function Authentication() {
                 setPassword("")
             }
         } catch (err) {
-
             console.log(err);
-            let message = (err.response.data.message);
+            let message = err.response?.data?.message || err.message || "An error occurred";
             setError(message);
         }
     }
