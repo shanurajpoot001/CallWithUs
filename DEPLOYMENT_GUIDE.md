@@ -5,10 +5,11 @@
 Your app is now ready for deployment with proper environment configuration.
 
 ## 📁 Files Created:
-- `backend/config.env` - Backend environment variables
-- `frontend/config.env` - Frontend environment variables
+- `backend/environment.template` - Backend environment variables template
+- `frontend/environment.template` - Frontend environment variables template
 - Updated `backend/src/app.js` - Now uses environment variables
 - Updated `frontend/src/environment.js` - Dynamic server URL
+- `.gitignore` - Root gitignore file (protects .env files)
 
 ## 🎯 Quick Deployment Steps:
 
@@ -45,6 +46,19 @@ NODE_ENV=production
 PORT=8000
 MONGODB_URI=mongodb+srv://shanurajpoot1234_db_user:VNULZvWKIcKemUql@callwithus.hkkiobo.mongodb.net/?retryWrites=true&w=majority&appName=CallWithUs
 CORS_ORIGIN=https://your-frontend-domain.vercel.app
+```
+
+### 📝 Local Development Setup:
+```bash
+# Backend
+cd backend
+cp environment.template .env
+# Edit .env with your values
+
+# Frontend  
+cd frontend
+cp environment.template .env
+# Edit .env with your values
 ```
 
 ### Frontend (Vercel):

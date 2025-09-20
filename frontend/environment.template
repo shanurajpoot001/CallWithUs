@@ -1,4 +1,6 @@
-# Frontend Environment Variables
+# Frontend Environment Variables Template
+# Copy this to .env and update the values
+
 REACT_APP_NODE_ENV=production
 
 # Backend Server URL
