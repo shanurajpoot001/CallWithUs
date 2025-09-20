@@ -50,11 +50,12 @@ git push
 NODE_ENV=production
 PORT=8000
 MONGODB_URI=mongodb+srv://shanurajpoot1234_db_user:VNULZvWKIcKemUql@callwithus.hkkiobo.mongodb.net/?retryWrites=true&w=majority&appName=CallWithUs
-CORS_ORIGIN=https://callwithus-frontend.onrender.com
+CORS_ORIGIN=https://callwithus.onrender.com
 ```
 
-### 🎉 Backend Live:
-**Backend URL**: `https://callwithus-backend.onrender.com`
+### 🎉 Live URLs:
+- **Frontend**: `https://callwithus.onrender.com`
+- **Backend**: `https://callwithus-backend.onrender.com`
 
 ### 📝 Local Development Setup:
 ```bash
