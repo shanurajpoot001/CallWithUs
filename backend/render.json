@@ -1,0 +1,20 @@
+{
+  "name": "callwithus-backend",
+  "env": "node",
+  "buildCommand": "npm install",
+  "startCommand": "npm start",
+  "envVars": [
+    {
+      "key": "NODE_ENV",
+      "value": "production"
+    },
+    {
+      "key": "PORT",
+      "value": "8000"
+    },
+    {
+      "key": "MONGODB_URI",
+      "value": "mongodb+srv://shanurajpoot1234_db_user:VNULZvWKIcKemUql@callwithus.hkkiobo.mongodb.net/?retryWrites=true&w=majority&appName=CallWithUs"
+    }
+  ]
+}

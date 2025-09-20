@@ -1,0 +1,16 @@
+{
+  "name": "callwithus-frontend",
+  "type": "static",
+  "buildCommand": "npm install && npm run build",
+  "publishDirectory": "build",
+  "envVars": [
+    {
+      "key": "NODE_ENV",
+      "value": "production"
+    },
+    {
+      "key": "REACT_APP_SERVER_URL",
+      "value": "https://callwithus-backend.onrender.com"
+    }
+  ]
+}
