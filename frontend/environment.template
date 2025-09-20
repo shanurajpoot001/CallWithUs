@@ -4,7 +4,7 @@
 REACT_APP_NODE_ENV=production
 
 # Backend Server URL
-REACT_APP_SERVER_URL=https://your-backend-domain.railway.app
+REACT_APP_SERVER_URL=https://callwithus-backend.onrender.com
 
 # Development Server URL (for local testing)
 REACT_APP_DEV_SERVER_URL=http://localhost:8000

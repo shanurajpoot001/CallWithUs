@@ -50,8 +50,11 @@ git push
 NODE_ENV=production
 PORT=8000
 MONGODB_URI=mongodb+srv://shanurajpoot1234_db_user:VNULZvWKIcKemUql@callwithus.hkkiobo.mongodb.net/?retryWrites=true&w=majority&appName=CallWithUs
-CORS_ORIGIN=https://your-frontend-domain.vercel.app
+CORS_ORIGIN=https://callwithus-frontend.onrender.com
 ```
+
+### 🎉 Backend Live:
+**Backend URL**: `https://callwithus-backend.onrender.com`
 
 ### 📝 Local Development Setup:
 ```bash
@@ -66,9 +69,9 @@ cp environment.template .env
 # Edit .env with your values
 ```
 
-### Frontend (Vercel):
+### Frontend (Vercel/Render):
 ```
-REACT_APP_SERVER_URL=https://your-backend-domain.railway.app
+REACT_APP_SERVER_URL=https://callwithus-backend.onrender.com
 NODE_ENV=production
 ```
 
