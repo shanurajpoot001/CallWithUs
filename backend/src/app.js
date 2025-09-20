@@ -17,15 +17,24 @@ const io = connectToSocket(server);
 
 app.set("port", (process.env.PORT || 8000))
 
-// CORS configuration
+// CORS configuration - Allow all origins for now
 app.use(cors({
-    origin: process.env.CORS_ORIGIN?.split(',') || "*",
+    origin: "*",
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true
 }));
+
+console.log("CORS configured to allow all origins");
 app.use(express.json({ limit: "40kb" }));
 app.use(express.urlencoded({ limit: "40kb", extended: true }));
 
 app.use("/api/v1/users", userRoutes);
+
+// Test route
+app.get("/api/test", (req, res) => {
+    res.json({ message: "Backend is working!", timestamp: new Date().toISOString() });
+});
 
 const start = async () => {
     try {
